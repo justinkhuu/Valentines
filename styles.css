@@ -1,66 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #FFE6EE; /* Light pink background */
     margin: 0;
-    background-color: #fdd7e4; /* Light pink background */
+    padding: 0;
 }
 
 .container {
     text-align: center;
 }
 
-.buttons {
-    margin-bottom: 20px;
-}
-
-.buttons button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
-
-#yesBtn {
-    background-color: #ff66b3; /* Pink button color */
-    color: white;
-}
-
-#noBtn {
-    background-color: #ff66b3; /* Pink button color */
-    color: white;
-}
-
-#cards {
-    display: none;
-    margin-top: 20px;
-}
-
 .card {
     width: 200px;
-    height: 200px; /* Adjust the height to match the width */
-    perspective: 1000px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
     display: inline-block;
-    margin: 0 10px;
-    border-radius: 50%; /* Make the card round */
-    overflow: hidden; /* Ensure content within the card stays within the rounded shape */
+    vertical-align: top;
 }
-
 
 .card-inner {
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
     transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-    transform: rotateY(180deg);
+    transition: transform 0.8s;
 }
 
 .card-front,
@@ -71,19 +34,96 @@ body {
     backface-visibility: hidden;
 }
 
-.card-front {
+.card-back {
+    transform: rotateY(180deg);
+    text-align: center;
+    line-height: 200px;
+}
+
+.final-card {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
-.card-back {
-    transform: rotateY(180deg);
-    background-color: #ff66b3; /* Pink color for back of card */
-    color: white;
-    padding: 20px;
+.final-card-text {
+    margin-top: 20px;
 }
 
+.final-card .card {
+    width: 150px;
+    height: 150px;
+}
+
+.final-card-text #finalMessage {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #FF69B4;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #D35293;
+}
+
+#heartbreak {
+    margin-top: 20px;
+}
+
+#heartbreak img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+#goBackBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #FF69B4;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#goBackBtn:hover {
+    background-color: #D35293;
+}
+
+#finalCard {
+    margin-top: 20px;
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #FF69B4;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#restartBtn:hover {
+    background-color: #D35293;
+}
+
+/* Adjust image size for cards */
 .card img {
     max-width: 100%;
     max-height: 100%;
