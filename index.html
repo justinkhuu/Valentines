@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button id="yesBtn" onclick="showCards()">Yes</button>
+            <button id="noBtn" onclick="showHeartbreak()">No</button>
+        </div>
+        <div id="cards" style="display:none;">
+            <div class="card" id="card1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="image.jpg" alt="Card 1">
+                    </div>
+                    <div class="card-back">Happy Valentine's Day!</div>
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="image.jpg" alt="Card 2">
+                    </div>
+                    <div class="card-back">I love you!</div>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="image.jpg" alt="Card 3">
+                    </div>
+                    <div class="card-back">You mean the world to me!</div>
+                </div>
+            </div>
+        </div>
+        <div id="heartbreak" style="display:none;">
+            <img src="broken_heart.jpg" alt="Broken Heart">
+            <div id="heartbreakMessage">You're breaking my heart 💔, go back in time and try again.</div>
+            <button id="goBackBtn" onclick="goBack()">Go back in time</button>
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
