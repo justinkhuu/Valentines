@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,33 +14,23 @@
 <body>
 
     <div class="container">
+        <h1>You have made a wise decision!</h1>
+        <h1>Choose your kind of date night ☺☻!</h1>
 
-        <div class="buttons">
-            <h1>Will you be my Valentine?</h1>
-            <button id="yesBtn" onclick="showFirstCards()">Yes</button>
-            <button id="noBtn" onclick="showHeartbreak()">No</button>
-        </div>
-
-
-        <div id="firstCards" style="display:none;">
-            <h1>Choose your hot date for the night!</h1>
+        <div id="firstCards" style="display:block;">
             <!-- First set of cards -->
 
-            <!-- 1st card -->
+                <!-- 1st card -->
             <div class="card" onclick="selectFirstCard(1)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./images/image1.JPG" alt="Card 1">
-                        <div class="name">
-                            <h4><b>John Doe</b></h4>
-                            <p>Architect & Engineer</p>
-                        </div>
                     </div>
                     <div class="card-back" id="firstCard1Message">Happy Valentine's Day!</div>
                 </div>
-                
+                <a href="/links/menya/menya.html">Menya Daruma</a>
             </div>
-            <!-- 2nd card -->
+                <!-- 2nd card -->
             <div class="card" onclick="selectFirstCard(2)">
                 <div class="card-inner">
                     <div class="card-front">
@@ -50,7 +39,7 @@
                     <div class="card-back" id="firstCard2Message">I love you!</div>
                 </div>
             </div>
-            <!-- 3rd card -->
+                <!-- 3rd card -->
             <div class="card" onclick="selectFirstCard(3)">
                 <div class="card-inner">
                     <div class="card-front">
@@ -59,7 +48,7 @@
                     <div class="card-back" id="firstCard3Message">You mean the world to me!</div>
                 </div>
             </div>
-            <!-- 4th card -->
+                <!-- 4th card -->
             <div class="card" onclick="selectFirstCard(4)">
                 <div class="card-inner">
                     <div class="card-front">
@@ -68,7 +57,7 @@
                     <div class="card-back" id="firstCard4Message">You mean the world to me!</div>
                 </div>
             </div>
-            <!-- 5th card -->
+                <!-- 5th card -->
             <div class="card" onclick="selectFirstCard(5)">
                 <div class="card-inner">
                     <div class="card-front">
@@ -78,7 +67,7 @@
                 </div>
             </div>
 
-            <!-- 6th card -->
+                <!-- 6th card -->
             <div class="card" onclick="selectFirstCard(6)">
                 <div class="card-inner">
                     <div class="card-front">
@@ -87,10 +76,37 @@
                     <div class="card-back" id="firstCard5Message">You mean the world to me!</div>
                 </div>
             </div>
+
         </div>
+        <!--End of first set of cards-->
 
-
-
+        <div id="secondCards" style="display:none;">
+            <!-- Second set of cards -->
+            <div class="card" onclick="showFinalCard('You\'re amazing!', 'image4.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/image4.jpg" alt="Card 4">
+                    </div>
+                    <div class="card-back">You're amazing!</div>
+                </div>
+            </div>
+            <div class="card" onclick="showFinalCard('You make me smile!', 'image5.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/image5.jpg" alt="Card 5">
+                    </div>
+                    <div class="card-back">You make me smile!</div>
+                </div>
+            </div>
+            <div class="card" onclick="showFinalCard('You\'re the best!', 'image6.png')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/image6.png" alt="Card 6">
+                    </div>
+                    <div class="card-back">You're the best!</div>
+                </div>
+            </div>
+        </div>
         <div id="heartbreak" style="display:none;">
             <img src="./images/broken_heart.jpg" alt="Broken Heart">
             <div id="heartbreakMessage">You're breaking my heart 💔, go back in time and try again.</div>
@@ -123,5 +139,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>

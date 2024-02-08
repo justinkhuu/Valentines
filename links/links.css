@@ -1,0 +1,12 @@
+h1 {
+    color: brown;
+}
+
+.display {
+    height: 500px;
+    width: auto;
+}
+
+.display-Title{
+    text-align: left;
+}
