@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Website</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+
+
+        <div id="cards" style="display:none;">
+            <!-- Tinder-style cards -->
+            <div class="card" id="card1">
+                <img src="image1.jpg" alt="Card 1">
+                <div class="buttons">
+                    <button onclick="selectCard(1)">Yes</button>
+                    <button onclick="hideCard(1)">No</button>
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <img src="image2.jpg" alt="Card 2">
+                <div class="buttons">
+                    <button onclick="selectCard(2)">Yes</button>
+                    <button onclick="hideCard(2)">No</button>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <img src="image3.jpg" alt="Card 3">
+                <div class="buttons">
+                    <button onclick="selectCard(3)">Yes</button>
+                    <button onclick="hideCard(3)">No</button>
+                </div>
+            </div>
+        </div>
+        <!-- Other elements (hidden by default) -->
+    </div>
+
+    <script src="1.js"></script>
+</body>
+</html>
