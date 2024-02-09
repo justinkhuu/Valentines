@@ -18,6 +18,7 @@ function swipeLeft(cardId){
 function showFirstCards() {
     document.querySelector('.buttons').style.display = 'none';
     document.getElementById('firstCards').style.display = 'block';
+    document.getElementById('home').style.display = 'none';
 }
 
 function selectFirstCard(cardId) {
