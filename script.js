@@ -62,6 +62,7 @@ function showFinalCard(chosenMessage, chosenImage) {
 function showHeartbreak() {
     document.querySelector('.buttons').style.display = 'none';
     document.getElementById('heartbreak').style.display = 'block';
+    document.getElementById('home').style.display = 'none';
 }
 
 function goBack() {
@@ -71,6 +72,7 @@ function goBack() {
     document.getElementById('secondCards').style.display = 'none';
     document.getElementById('heartbreak').style.display = 'none';
     document.getElementById('finalCard').style.display = 'none';
+    document.getElementById('home').style.display = 'block';
 }
 
 function restart() {
@@ -80,6 +82,7 @@ function restart() {
     document.getElementById('secondCards').style.display = 'none';
     document.getElementById('heartbreak').style.display = 'none';
     document.getElementById('finalCard').style.display = 'none';
+    document.getElementById('home').style.display = 'block';
 
     firstCardSelected = false;
     thirdCardSelected = false;
@@ -111,5 +114,5 @@ function print(){
 }
 
 function showFirstPage(){
-    window.location.href="chooseADate.html"
+    window.location.href="index.html"
 }
