@@ -34,19 +34,19 @@
             <h1>Choose your Date!</h1>
 
             <!-- First set of cards -->
-            <div class="card" onclick="selectFirstCard(1)">
+            <div class="card" onclick="hideCard(1)" id="card1">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin1.jpg" alt="Card 1">
-
+                        <h2>Drunk Justin, 25 </h2> <br>
+                        <p style="font-size: larger;">Bartender<br></p>
+                        <p style="font-size: medium;">4 Years ago</p>
                     </div>
                     <div class="card-back" id="firstCard1Message">Happy Valentine's Day!</div>
                 </div>
-                <h2>Drunk Justin, 25 </h2> <br>
-                <p style="font-size: larger;">Bartender<br></p>
-                <p style="font-size: medium;">4 Years ago</p>
+
             </div>
-            <div class="card" onclick="selectFirstCard(2)">
+            <div class="card" onclick="hideCard(2)" id="card2" style="display: none;">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin2.jpg" alt="Card 2">
@@ -57,7 +57,7 @@
                     <div class="card-back" id="firstCard2Message">I love you!</div>
                 </div>
             </div>
-            <div class="card" onclick="selectFirstCard(3)">
+            <div class="card" onclick="hideCard(3)" id="card3" style="display: none;">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin3.jpg" alt="Card 3">
@@ -101,10 +101,10 @@
                     <div class="card-back" id="firstCard6Message">You mean the world to me!</div>
                 </div>
             </div>
-            <div class="card" onclick="selectFirstCard(7)">
+            <div class="card" onclick="selectFirstCard(7)" >
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="./justins/justin7.jpg" alt="Card 7">
+                        <img src="./justins/justin7.jpg" alt="Card 7" id="card7">
                         <h2>Space Justin, 22 </h2> <br>
                         <p style="font-size: larger;">Ass-tronaut<br></p>
                         <p style="font-size: medium;">6 Years ago</p>

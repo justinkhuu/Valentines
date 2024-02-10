@@ -15,6 +15,15 @@ function swipeLeft(cardId){
     document.getElementById(`card${nextCardId}`).style.display = 'block';
 }
 
+function hideCard(cardId) {
+    // Hide the card
+    document.getElementById(`card${cardId}`).style.display = 'none';
+
+    // Display the next card if available
+    const nextCardId = cardId < 3 ? cardId + 1 : 1;
+    document.getElementById(`card${nextCardId}`).style.display = 'block';
+}
+
 function showFirstCards() {
     document.querySelector('.buttons').style.display = 'none';
     document.getElementById('firstCards').style.display = 'block';
