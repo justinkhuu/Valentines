@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
 </head>
 
 <header>
@@ -30,18 +31,20 @@
 
 
         <div id="firstCards" style="display:none;">
+            <h1>Choose your Date!</h1>
 
             <!-- First set of cards -->
             <div class="card" onclick="selectFirstCard(1)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin1.jpg" alt="Card 1">
-                        <h2>Drunk Justin, 25 </h2> <br>
-                        <p style="font-size: larger;">Bartender<br></p>
-                        <p style="font-size: medium;">4 Years ago</p>
+
                     </div>
                     <div class="card-back" id="firstCard1Message">Happy Valentine's Day!</div>
                 </div>
+                <h2>Drunk Justin, 25 </h2> <br>
+                <p style="font-size: larger;">Bartender<br></p>
+                <p style="font-size: medium;">4 Years ago</p>
             </div>
             <div class="card" onclick="selectFirstCard(2)">
                 <div class="card-inner">
@@ -115,7 +118,7 @@
                         <img src="./justins/justin8.jpg" alt="Card 8">
                         <h2>Beach Justin, 25 </h2> <br>
                         <p style="font-size: larger;">Sand Model<br></p>
-                        <p style="font-size: medium;">3</p>
+                        <p style="font-size: medium;">3 Years Ago</p>
                     </div>
                     <div class="card-back" id="firstCard8Message">You mean the world to me!</div>
                 </div>
@@ -138,6 +141,39 @@
                         <h2>Orphan Justin, 19 </h2> <br>
                         <p style="font-size: larger;">Vengence<br></p>
                         <p style="font-size: medium;">9 Years ago</p>
+                    </div>
+                    <div class="card-back" id="firstCard10Message">You mean the world to me!</div>
+                </div>
+            </div>
+            <div class="card" onclick="selectFirstCard(11)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./justins/justin11.jpg" alt="Card 10">
+                        <h2>Dog Justin, 22 </h2> <br>
+                        <p style="font-size: larger;">Thot<br></p>
+                        <p style="font-size: medium;">7 Years ago</p>
+                    </div>
+                    <div class="card-back" id="firstCard11Message">You mean the world to me!</div>
+                </div>
+            </div>
+            <div class="card" onclick="selectFirstCard(12)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./justins/justin12.jpg" alt="Card 10">
+                        <h2>German Justin, 23 </h2> <br>
+                        <p style="font-size: larger;">Säufer<br></p>
+                        <p style="font-size: medium;">5 Years ago</p>
+                    </div>
+                    <div class="card-back" id="firstCard12Message">You mean the world to me!</div>
+                </div>
+            </div>
+            <div class="card" >
+                <div class="card-inner" onclick="showHeartbreak()">
+                    <div class="card-front">
+                        <img src="./justins/ryan.jpg" alt="Card 10">
+                        <h2>Ryan Gosling </h2> <br>
+                        <p style="font-size: larger;">Actor<br></p>
+                        <p style="font-size: medium;">1 Year ago</p>
                     </div>
                     <div class="card-back" id="firstCard10Message">You mean the world to me!</div>
                 </div>
@@ -221,6 +257,7 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <img id="finalImage2" src="" alt="Final Card 2">
+                            https://seoyeonsworld.com/
                         </div>
                         <div class="card-back" id="finalMessage2"></div>
                     </div>

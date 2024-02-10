@@ -63,6 +63,7 @@ function showHeartbreak() {
     document.querySelector('.buttons').style.display = 'none';
     document.getElementById('heartbreak').style.display = 'block';
     document.getElementById('home').style.display = 'none';
+    document.getElementById('firstCards').style.display = 'none';
 }
 
 function goBack() {
