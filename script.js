@@ -63,7 +63,7 @@ function showFinalCard(chosenMessage, chosenImage) {
 
         document.getElementById('finalMessage').innerHTML = finalMessage;
         document.getElementById('finalImage1').src = `../justins/justin${selectedFirstCardId}.jpg`;
-        document.getElementById('finalImage2').src = `../images/image${selectedThirdCardId + 3}.jpg`;
+        document.getElementById('finalImage2').src = `../images/food${selectedThirdCardId}.jpg`;
         document.getElementById('finalImage3').src = chosenImage;
     }
 }
