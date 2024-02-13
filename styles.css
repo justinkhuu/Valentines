@@ -17,11 +17,14 @@ header img {
     width: auto;
 }
 
-.valentine img {
-    width: 100%;
-    height: auto; /* Set height to auto to maintain aspect ratio */
-    object-fit: cover;
-    margin-top: -30px; /* Adjust this value to move the image up */
+
+
+.finalMessageBorder {
+    border: 10px solid transparent;
+    border-width: 10px;
+    border-image: url(flowers.png) 200 round;
+    text-align: center;
+    font-size: larger;
 }
 
 header {

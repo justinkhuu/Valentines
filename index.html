@@ -21,14 +21,14 @@
 </header>
 
 <body>
-<img src="cat.jpg" style="display: block;" id="home" class="valentine" style="width: 10%;">
+
     <div class="container">
         <div class="buttons">
             <h1>❤️Will you be my Valentine?❤️</h1>
             <button id="yesBtn" onclick="showFirstCards()">Yes</button>
             <button id="noBtn" onclick="showHeartbreak()">No</button>
         </div>
-
+        <img src="cat.jpg" style="display: block;" id="home" class="valentine" style="width: 10%;">
 
         <div id="firstCards" style="display:none;">
             <h1>Choose your Justin!</h1>
@@ -379,7 +379,7 @@
                 </div>
             </div>
             <div class="final-card-text">
-                <div id="finalMessage"></div>
+                <div id="finalMessage" class="finalMessageBorder"></div>
                 <button id="restartBtn" onclick="restart()">Restart</button>
             </div>
             <img src="chipi.gif" alt="chapa">
