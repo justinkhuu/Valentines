@@ -9,11 +9,19 @@ body {
 
 .container {
     text-align: center;
+    display: block;
 }
 
 header img {
-    height: 100px;
-    width: fit-content;
+    height: 50px;
+    width: auto;
+}
+
+.valentine img {
+    width: 100%;
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    object-fit: cover;
+    margin-top: -30px; /* Adjust this value to move the image up */
 }
 
 header {
@@ -24,11 +32,12 @@ header {
     margin-bottom: 32px;
     background: #ebcfdd;
     position: relative;
-    border-bottom: solid;
-    border-bottom-width: 2px;
+    border-bottom: 10px solid transparent;
+    border-bottom-width: 10px;
     border-color: rgb(39, 39, 39);
     border-radius: 1px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Lucida Sans';
+    border-image: url(flowers.png) 150 round;
 }
 
 header nav {
@@ -45,7 +54,10 @@ footer {
     display: flex;
     gap: 16px;
     align-items: center;
-    border-top: solid 2px #000000;
+    border-top: solid 10px #000000;
+    border-top-width: 10px;
+
+    border-image: url(flowers.png) 150 round;
 }
 
 footer p {
@@ -289,20 +301,20 @@ body {
 
 .button1 {
     align-self: flex-end;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%; /* Make the border circular */
     overflow: hidden; /* Hide overflow content to maintain circular shape */
     margin: 10px;
-    margin-top: 50px;
-    margin-right: -150px;
+    margin-top: 0px;
+    margin-right: -350px;
     background-color: #0f440a;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .button2 {
     align-self: flex-end;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%; /* Make the border circular */
     overflow: hidden; /* Hide overflow content to maintain circular shape */
     margin: 10px;

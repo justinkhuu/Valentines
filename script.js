@@ -65,7 +65,7 @@ function showFinalCard(chosenMessage, chosenImage) {
         document.getElementById('secondCards').style.display = 'none';
         document.getElementById('finalCard').style.display = 'block';
 
-        finalMessage = firstCardMessage + '<br>' + thirdCardMessage + '<br>' + chosenMessage;
+        finalMessage = firstCardMessage + '<br><br>' + thirdCardMessage + '<br><br>' + chosenMessage;
 
         document.getElementById('finalMessage').innerHTML = finalMessage;
         document.getElementById('finalImage1').src = `../justins/justin${selectedFirstCardId}.jpg`;

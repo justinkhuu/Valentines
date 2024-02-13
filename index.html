@@ -21,10 +21,10 @@
 </header>
 
 <body>
-<img src="cat.jpg" style="display: block;" id="home">
+<img src="cat.jpg" style="display: block;" id="home" class="valentine" style="width: 10%;">
     <div class="container">
         <div class="buttons">
-            <h1>Will you be my Valentine?</h1>
+            <h1>❤️Will you be my Valentine?❤️</h1>
             <button id="yesBtn" onclick="showFirstCards()">Yes</button>
             <button id="noBtn" onclick="showHeartbreak()">No</button>
         </div>
@@ -325,14 +325,13 @@
                 </div>
             </div>
 
-            <div class="card" onclick="showFinalCard('A Forever Rose!', '../images/gift7.jpg')">
+            <div class="card" onclick="showFinalCard('A Forever Rose, so you stay with me fur-ever', '../images/gift7.jpg')">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="./images/gift7.jpg" alt="Card 12">
-                        <h2>Forever Rose</h2>
+                        <img src="./images/gift7.jpg" alt="Card 14">
+                        <h2>A Forever Rose!</h2>
                     </div>
-                    <div class="card-back"></div>
-                    <img src="./images/gift7.jpg" alt="Card 12">
+                    <div class="card-back"><img src="./images/gift7.jpg" alt="rose"></div>
                 </div>
             </div>
 
@@ -351,10 +350,8 @@
 
         <div id="finalCard" style="display:none;">
             <img src="IMG_4077.PNG" alt="mai" class="profileFinal">
-            <h1>It's a Date Mai! <br> Please see below for you details on your date with Justin!</h1>
-            <img src="chipi.gif" alt="chapa">
-            <iframe id="youtubePlayer2" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-            <img src="happy-happy-happy-happy.gif" alt="hcat">
+            <h1>❤️It's a Date Mai! ❤️<br> Please see below for you details on your date with Justin!</h1>
+            
             <div class="final-card">
                 <div class="card" id="finalCard1">
                     <div class="card-inner">
@@ -385,6 +382,9 @@
                 <div id="finalMessage"></div>
                 <button id="restartBtn" onclick="restart()">Restart</button>
             </div>
+            <img src="chipi.gif" alt="chapa">
+            <iframe id="youtubePlayer2" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
+            <img src="happy-happy-happy-happy.gif" alt="hcat">
         </div>
         <div id="message"></div>
     </div>
