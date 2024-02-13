@@ -21,7 +21,7 @@
 </header>
 
 <body>
-<img src="couple.jpg" style="display: block;" id="home">
+<img src="cat.jpg" style="display: block;" id="home">
     <div class="container">
         <div class="buttons">
             <h1>Will you be my Valentine?</h1>
@@ -31,10 +31,10 @@
 
 
         <div id="firstCards" style="display:none;">
-            <h1>Choose your Date!</h1>
+            <h1>Choose your Justin!</h1>
 
             <!-- First set of cards -->
-            <div class="card" onclick="hideCard(1)" id="card1">
+            <div class="card"  id="card1">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin1.jpg" alt="Card 1">
@@ -42,11 +42,20 @@
                         <p style="font-size: larger;">Bartender<br></p>
                         <p style="font-size: medium;">4 Years ago</p>
                     </div>
-                    <div class="card-back" id="firstCard1Message">Happy Valentine's Day!</div>
-                </div>
-
+                    <div class="card-back" id="firstCard1Message">
+                        Hey there! I'm Drunk Justin, your go-to guy for spontaneous 
+                        fun and questionable decisions! When I'm not exploring new bars 
+                        or attempting gourmet cooking at 2 AM, you can catch me perfecting my 
+                        karaoke skills or discussing conspiracy theories. I thrive on adventure 
+                        and turning ordinary nights into unforgettable escapades, complete with 
+                        spontaneous dance-offs. If you're up for laughter, adventure, and a few 
+                        embarrassing stories, swipe right and let's grab a drink... or three! 🍻
+                        <br>
+                    </div>
+                </div><button class="button2" onclick="hideCard(1)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(1)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="hideCard(2)" id="card2" style="display: none;">
+
+            <div class="card"  id="card2" style="display: none;">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin2.jpg" alt="Card 2">
@@ -54,10 +63,11 @@
                         <p style="font-size: larger;">Vigilante<br></p>
                         <p style="font-size: medium;">10 Years Ago</p>
                     </div>
-                    <div class="card-back" id="firstCard2Message">I love you!</div>
-                </div>
+                    <div class="card-back" id="firstCard2Message">Hey! I'm Hero Justin, here to save the day with my clumsy charm and questionable superhero skills. When I'm not tripping over my cape or rescuing imaginary kittens, you can catch me attempting to fly with cardboard wings. Let's make some heroic memories together... or at least have a good laugh trying!</div>
+                </div> <button class="button2" onclick="hideCard(2)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(2)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="hideCard(3)" id="card3" style="display: none;">
+
+            <div class="card"  id="card3" style="display: none;">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin3.jpg" alt="Card 3">
@@ -65,10 +75,11 @@
                         <p style="font-size: larger;">Nail Technician<br></p>
                         <p style="font-size: medium;">4 Years Ago</p>
                     </div>
-                    <div class="card-back" id="firstCard3Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard3Message">Hey there! I'm Taken Justin, happily committed and here to make friends, not romantic connections. When I'm not doting on my significant other or planning our next adventure together, you'll find me indulging in hobbies like cooking, gaming, and binge-watching TV shows. Let's chat and share stories, but just so we're clear, my heart's already taken!</div>
+                </div> <button class="button2" onclick="hideCard(3)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(3)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(4)">
+
+            <div class="card" style="display: none;" id="card4">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin4.jpg" alt="Card 4">
@@ -76,10 +87,11 @@
                         <p style="font-size: larger;">Sailor<br></p>
                         <p style="font-size: medium;">10 Years Ago</p>
                     </div>
-                    <div class="card-back" id="firstCard4Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard4Message">Ahoy! I'm Popeyes Justin the Sailor, navigating the seas with spinach-powered gusto. When I'm not hoisting sails or battling pirates, I enjoy fishing and spinning tales of adventure. Join me for salty escapades and seaworthy fun. Let's chart a course for excitement together on the SS RelationShip! ⚓</div>
+                </div> <button class="button2" onclick="hideCard(4)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(4)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(5)">
+
+            <div class="card" style="display: none;" id="card5">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin5.jpg" alt="Card 5">
@@ -87,10 +99,11 @@
                         <p style="font-size: larger;">President<br></p>
                         <p style="font-size: medium;">A week ago</p>
                     </div>
-                    <div class="card-back" id="firstCard5Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard5Message">Hello! I'm Trump Justin, a parody enthusiast with a knack for political satire and big hair days. When I'm not tweeting up a storm or building walls of laughter, you can catch me perfecting my impression of the former commander-in-chief (believe me, it's tremendous). My hobbies include negotiating with my cat for more treats, golfing on miniature courses, and building towers of Jenga just to see them fall. Let's make dating great again with some humor and a sprinkle of controversy – but don't worry, I promise no fake news here!</div>
+                </div> <button class="button2" onclick="hideCard(5)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(5)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(6)">
+
+            <div class="card" style="display: none;" id="card6">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin6.jpg" alt="Card 6">
@@ -98,10 +111,11 @@
                         <p style="font-size: larger;">Food<br></p>
                         <p style="font-size: medium;">6 Years ago</p>
                     </div>
-                    <div class="card-back" id="firstCard6Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard6Message">Hey! I'm Pizza Justin, your cheesy slice of fun in a world full of toppings. 🍕 When I'm not perfecting pies or hosting pizza parties, you can catch me tossing dough and hunting down the best slices in town. Let's share a slice and see if we're a perfect match – with extra cheese, of course! 🧀</div>
+                </div> <button class="button2" onclick="hideCard(6)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(6)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(7)" >
+
+            <div class="card" style="display: none;" id="card7">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin7.jpg" alt="Card 7" id="card7">
@@ -109,10 +123,11 @@
                         <p style="font-size: larger;">Ass-tronaut<br></p>
                         <p style="font-size: medium;">6 Years ago</p>
                     </div>
-                    <div class="card-back" id="firstCard7Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard7Message">Hey there, fellow cosmic explorers! I'm Space Justin, your friendly 'ass-tronaut,' ready to boldly go where no butt has gone before! 🚀 When I'm not lost in the cosmos or pondering the mysteries of Uranus (yes, I went there), you'll find me gazing at the stars or conducting zero-gravity experiments. My hobbies include stargazing, astrophotography, and enjoying cosmic coffee. Let's journey to infinity and beyond together – because with me, every day is a space odyssey!</div>
+                </div> <button class="button2" onclick="hideCard(7)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(7)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(8)">
+
+            <div class="card" style="display: none;" id="card8">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin8.jpg" alt="Card 8">
@@ -120,10 +135,11 @@
                         <p style="font-size: larger;">Sand Model<br></p>
                         <p style="font-size: medium;">3 Years Ago</p>
                     </div>
-                    <div class="card-back" id="firstCard8Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard8Message">Hey beach lovers! I'm Beach Justin, your sun-kissed companion for sandy adventures and salty escapades. 🏖️ When I'm not catching waves or building sandcastles, you'll find me soaking up the sun with a good book or indulging in some beach volleyball. My hobbies include surfing, beachcombing for seashells, and perfecting my tan lines (though I usually end up looking like a lobster). Let's dive into the waves together and create some unforgettable beach memories – because with me, every day feels like a day at the beach!</div>
+                </div> <button class="button2" onclick="hideCard(8)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(8)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(9)">
+
+            <div class="card" style="display: none;" id="card9">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin9.jpg" alt="Card 9">
@@ -131,10 +147,11 @@
                         <p style="font-size: larger;">WWII Veteran<br></p>
                         <p style="font-size: medium;">10 Years ago</p>
                     </div>
-                    <div class="card-back" id="firstCard9Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard9Message">Hey world! I'm Captain America Justin, your patriotic pal and shield-wielding superhero. 🇺🇸 When I'm not fighting off Hydra or hitting the gym, catch me at comic cons or volunteering at the VA hospital. Let's team up and make every day a heroic adventure! 💪</div>
+                </div> <button class="button2" onclick="hideCard(9)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(9)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(10)">
+
+            <div class="card" style="display: none;" id="card10">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin10.jpg" alt="Card 10">
@@ -142,10 +159,11 @@
                         <p style="font-size: larger;">Vengence<br></p>
                         <p style="font-size: medium;">9 Years ago</p>
                     </div>
-                    <div class="card-back" id="firstCard10Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard10Message">Hey Gotham! I'm Orphan Justin, the dark knight in training with a flair for turning tragic tales into comedy gold. 🦇 When I'm not brooding over my lack of Batmobile, you'll find me decoding bat signals or perfecting my 'I'm Batman' voice (needs work). Let's team up and bring some humor to Gotham's darkest nights! 😄</div>
+                </div><button class="button2" onclick="hideCard(10)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(10)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(11)">
+
+            <div class="card" style="display: none;" id="card11">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin11.jpg" alt="Card 10">
@@ -153,10 +171,11 @@
                         <p style="font-size: larger;">Thot<br></p>
                         <p style="font-size: medium;">7 Years ago</p>
                     </div>
-                    <div class="card-back" id="firstCard11Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard11Message">Hey there, fellow bark enthusiasts! I'm Dog Justin, your loyal companion with a tail-wagging sense of humor and a penchant for sniffing out good times. 🐾 When I'm not chasing squirrels or rolling in questionable substances at the park, you'll find me perfecting my 'puppy dog eyes' for extra treats or attempting to master the art of fetch (let's just say the ball usually wins). My hobbies include belly rubs, napping in sunbeams, and trying to decipher the mysteries of the vacuum cleaner. Let's leash up and embark on a paw-some adventure together – because with me by your side, every day is a tail-wagging good time! Just don't be surprised if I'm a bit 'ruff' around the edges, but hey, who doesn't love a little 'doggystyle' fun?</div>
+                </div> <button class="button2" onclick="hideCard(11)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(11)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" onclick="selectFirstCard(12)">
+
+            <div class="card" style="display: none;" id="card12">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/justin12.jpg" alt="Card 10">
@@ -164,89 +183,178 @@
                         <p style="font-size: larger;">Säufer<br></p>
                         <p style="font-size: medium;">5 Years ago</p>
                     </div>
-                    <div class="card-back" id="firstCard12Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard12Message">Guten Tag! I'm German Justin, your wurst nightmare and bratwurst enthusiast rolled into one schnitzel-loving package. 🇩🇪 When I'm not yodeling in the Alps or perfecting my lederhosen dance, you'll find me brewing the finest beer this side of the Rhine 🍺 or debating the merits of sauerkraut toppings. My hobbies include hiking in the Black Forest 🌲, mastering the art of pretzel making 🥨, and organizing Oktoberfest parties that would make Bavaria proud. Let's raise a stein and prost to new adventures – because with me, every day is a wunderbar experience!</div>
+                </div><button class="button2" onclick="hideCard(12)"><img src="x.png" alt="x"></button> <button class="button1" onclick="selectFirstCard(12)"><img src="check.png" alt="check"></button>
             </div>
-            <div class="card" >
-                <div class="card-inner" onclick="showHeartbreak()">
+
+            <div class="card" style="display: none;" id="card13">
+                <div class="card-inner">
                     <div class="card-front">
                         <img src="./justins/ryan.jpg" alt="Card 10">
                         <h2>Ryan Gosling </h2> <br>
                         <p style="font-size: larger;">Actor<br></p>
                         <p style="font-size: medium;">1 Year ago</p>
                     </div>
-                    <div class="card-back" id="firstCard10Message">You mean the world to me!</div>
-                </div>
+                    <div class="card-back" id="firstCard10Message">Hey there, fellow cinephiles! I'm Ryan Gosling, your charming leading man with a flair for captivating performances and heart-melting smiles. 🎬 When I'm not stealing scenes on the silver screen or perfecting my 'Gosling gaze,' you'll find me exploring new scripts, immersing myself in character studies, or honing my piano skills (La La Land, anyone?). My hobbies include long walks on the red carpet, indulging in espresso martinis, and charming audiences with my signature suave. Let's script our own blockbuster romance and make every moment as memorable as a Gosling monologue – because with me, every day is a cinematic adventure!</div>
+                </div><button class="button2" onclick="hideCard(13)"><img src="x.png" alt="x"></button> <button class="button1" onclick="showHeartbreak()"><img src="check.png" alt="check"></button>
             </div>
 
         </div>
 
         <div id="thirdCards" style="display:none;">
+            <h1>Choose a Restaurant</h1>
             <!-- 2nd set of cards Food ignore selectThirdCard-->
             <div class="card" onclick="selectThirdCard(1)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="./images/image1.jpg" alt="Card 13">
+                        <img src="./images/food1.jpg" alt="Card 13">
                         <h2>Menya Daruma</h2><br>
                         4.7 <i data-star="4.7"></i>
                         <p style="font-size: medium;">Japanese</p>
+                        <p style="font-size: medium;">No reservation, hope they have a seat</p>
                     </div>
-                    <div class="card-back" id="thirdCard1Message">You're special!4.7 <i data-star="4.7"></i></div>
+                    <div class="card-back" id="thirdCard1Message">4.7 <i data-star="4.7"> <br>We wait for a spot and eat Ramen</i></div>
                 </div>
             </div>
+
             <div class="card" onclick="selectThirdCard(2)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="/images/food2.jpg" alt="Card 14">
                         <h2>Estampa Gaucha</h2><br>
-                        4.3 <i data-star="4.3"></i>
+
                         <p style="font-size: medium;">Brazilian Steakhouse </p>
+                        <p style="font-size: medium;">8:15</p>
                     </div>
-                    <div class="card-back" id="thirdCard2Message">8:15 PM 4.3 <i data-star="4.3"></i></div>
+                    <div class="card-back" id="thirdCard2Message">4.3 <i data-star="4.3"> All you can eat steakhouse what else Do I gotta say :3 and we have a reservation already no waiting.</i></div>
                 </div>
             </div>
+
             <div class="card" onclick="selectThirdCard(3)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="./images/image3.jpg" alt="Card 15">
+                        <img src="./images/food3.jpg" alt="Card 15">
+                        <h2>Coquette</h2><br>
+                        <p style="font-size: medium;">French</p>
+                        <p style="font-size: medium;">No reservation, hope they have a seat</p>
                     </div>
-                    <div class="card-back" id="thirdCard3Message">You're wonderful!</div>
+                    <div class="card-back" id="thirdCard3Message">4.3 <i data-star="4.3"> <br>We wait for kyle to give a seat drink for free or cheap, and eat</i></div>
                 </div>
             </div>
+
+            <div class="card" onclick="selectThirdCard(4)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/food4.jpg" alt="Card 16">
+                        <h2>Bentley's</h2><br>
+                        <p style="font-size: medium;">French </p>
+                        <p style="font-size: medium;">5:15Pm `Set Menu`</p>
+                    </div>
+                    <div class="card-back" id="thirdCard4Message"> 4.3 <i data-star="4.3"> I'd make a reservation its a set menu <a href="https://bentleysrestaurantnc.com/menus/valentines-day" target="_blank">Menu</a></i></div>
+                </div>
+            </div>
+
+            <div class="card" onclick="selectThirdCard(5)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/food5.jpg" alt="Card 17">
+                        <h2>Sushi Hana</h2><br>
+                       
+                        <p style="font-size: medium;">Japanese </p>
+                        <p style="font-size: medium;">no reservation, </p>
+                    </div>
+                    <div class="card-back" id="thirdCard5Message"> 4.3 <i data-star="4.3"></i>ALL YOU CAN EAT SUSHI</div>
+                </div>
+            </div>
+
+            <div class="card" onclick="selectThirdCard(6)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/food6.jpg" alt="Card 17">
+                        <h2>Moa Korean BBQ</h2><br>
+                       
+                        <p style="font-size: medium;">Korean </p>
+                        <p style="font-size: medium;">no reservation, hope they have a seat</p>
+                    </div>
+                    <div class="card-back" id="thirdCard6Message"> 4.3 <i data-star="4.3">My Workplace</i></div>
+                </div>
+            </div>
+
         </div>
+
         <div id="secondCards" style="display:none;">
             <!-- Final set of cards -->
-            <div class="card" onclick="showFinalCard('You\'re amazing!', '../images/image4.jpg')">
+            
+            <h1>Choose a Gift! Cause you're my gift OwO </h1>
+            <div class="card" onclick="showFinalCard('You\'re amazing!', '../images/gift1.jpg')">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="./images/image1.jpg" alt="Card 10">
+                        <img src="./images/gift1.jpg" alt="Card 10">
+                        <h2>Iron Man Decoration</h2>
                     </div>
-                    <div class="card-back">https://seoyeonsworld.com/</div>
+                    <div class="card-back"></div>
                 </div>
             </div>
-            <div class="card" onclick="showFinalCard('You make me smile!', '../images/image5.jpg')">
+            <div class="card" onclick="showFinalCard('You make me smile!', '../images/gift2.jpg')">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="./images/image1.jpg" alt="Card 11">
+                        <img src="./images/gift2.jpg" alt="Card 11">
+                        <h2>Pet Mat</h2>
                     </div>
-                    <div class="card-back">You make me smile!</div>
+                    <div class="card-back"><br></div>
                 </div>
             </div>
-            <div class="card" onclick="showFinalCard('You\'re the best!', '../images/image7.jpg')">
+            
+            <div class="card" onclick="showFinalCard('Matching Funko Pops of You and I!', '../images/gift3.jpg')">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="./images/image7.jpg" alt="Card 12">
+                        <img src="./images/gift3.jpg" alt="Card 14">
+                        <h2>Matching Funko!</h2>
                     </div>
-                    <div class="card-back">You're the best!</div>
+                    <div class="card-back"><img src="./images/gift4.jpg" alt="funko"></div>
                 </div>
             </div>
+
+            <div class="card" onclick="showFinalCard('Cat sweaters for you and I!', '../images/gift5.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/gift5.jpg" alt="Card 14">
+                        <h2>Matching Shirts!</h2>
+                    </div>
+                    <div class="card-back"><img src="./images/gift6.jpg" alt="shirts"></div>
+                </div>
+            </div>
+
+            <div class="card" onclick="showFinalCard('A Forever Rose!', '../images/gift7.jpg')">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/gift7.jpg" alt="Card 12">
+                        <h2>Forever Rose</h2>
+                    </div>
+                    <div class="card-back"></div>
+                    <img src="./images/gift7.jpg" alt="Card 12">
+                </div>
+            </div>
+
         </div>
-        <div id="heartbreak" style="display:none;">
+
+        <div id="heartbreak" style="display:none;" class="heartbreak">
+            <iframe id="youtubePlayer" width="100" height="100" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
             <img src="./images/broken_heart.jpg" alt="Broken Heart">
-            <div id="heartbreakMessage">You're breaking my heart 💔, go back in time and try again.</div>
+            <div id="heartbreakMessage" class="heartbreakMessage"><h1>You're breaking my heart 💔, go back in time and try again.</h1>
+            <img src="crying2.gif" alt="cry2">
             <button id="goBackBtn" onclick="goBack()">Go back in time</button>
+            <img src="crying.gif" alt="cry">
         </div>
+        
+        </div>
+
         <div id="finalCard" style="display:none;">
+            <img src="IMG_4077.PNG" alt="mai" class="profileFinal">
+            <h1>It's a Date Mai! <br> Please see below for you details on your date with Justin!</h1>
+            <img src="chipi.gif" alt="chapa">
+            <iframe id="youtubePlayer2" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            <img src="happy-happy-happy-happy.gif" alt="hcat">
             <div class="final-card">
                 <div class="card" id="finalCard1">
                     <div class="card-inner">

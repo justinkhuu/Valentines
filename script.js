@@ -11,8 +11,14 @@ function swipeLeft(cardId){
     document.getElementById(`card${cardId}`).style.display = 'none';
 
     // Display the next card if available
-    const nextCardId = cardId < 9 ? cardId + 1 : 1;
+    const nextCardId = cardId < 14 ? cardId + 1 : 1;
     document.getElementById(`card${nextCardId}`).style.display = 'block';
+}
+
+function stopVideo() {
+    var iframe = document.getElementById("youtubePlayer");
+    var iframeSrc = iframe.src;
+    iframe.src = "hello";
 }
 
 function hideCard(cardId) {
@@ -20,7 +26,7 @@ function hideCard(cardId) {
     document.getElementById(`card${cardId}`).style.display = 'none';
 
     // Display the next card if available
-    const nextCardId = cardId < 3 ? cardId + 1 : 1;
+    const nextCardId = cardId < 13 ? cardId + 1 : 1;
     document.getElementById(`card${nextCardId}`).style.display = 'block';
 }
 
@@ -65,6 +71,9 @@ function showFinalCard(chosenMessage, chosenImage) {
         document.getElementById('finalImage1').src = `../justins/justin${selectedFirstCardId}.jpg`;
         document.getElementById('finalImage2').src = `../images/food${selectedThirdCardId}.jpg`;
         document.getElementById('finalImage3').src = chosenImage;
+        var iframe = document.getElementById("youtubePlayer2");
+        var iframeSrc = iframe.src;
+        iframe.src = "https://www.youtube.com/embed/ps74zeevi-g?autoplay=1";
     }
 }
 
@@ -73,6 +82,9 @@ function showHeartbreak() {
     document.getElementById('heartbreak').style.display = 'block';
     document.getElementById('home').style.display = 'none';
     document.getElementById('firstCards').style.display = 'none';
+    var iframe = document.getElementById("youtubePlayer");
+    var iframeSrc = iframe.src;
+    iframe.src = "https://www.youtube.com/embed/VaVYmPDKmww?autoplay=1";
 }
 
 function goBack() {
@@ -83,6 +95,7 @@ function goBack() {
     document.getElementById('heartbreak').style.display = 'none';
     document.getElementById('finalCard').style.display = 'none';
     document.getElementById('home').style.display = 'block';
+    stopVideo();
 }
 
 function restart() {
